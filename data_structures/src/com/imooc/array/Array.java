@@ -159,8 +159,8 @@ public class Array<E> {
         }
         size--;
         data[size] = null; // 释放最后一个元素空间
-        if(size == data.length/2){
-            resize(data.length/2);
+        if (size == data.length / 4 && data.length / 2 != 0) {
+            resize(data.length / 2);
         }
         return ret;
     }
@@ -214,6 +214,7 @@ public class Array<E> {
 
     /**
      * 数组扩容私有方法
+     *
      * @param newCapacity
      */
     private void resize(int newCapacity) {
