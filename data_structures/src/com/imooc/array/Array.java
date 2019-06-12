@@ -78,7 +78,8 @@ public class Array<E> {
             throw new IllegalArgumentException("Add failed.Require index>=0 and index<=size.");
         }
         if (size == data.length) {
-            throw new IllegalArgumentException("Add failed.Array is full.");
+            //数组扩容到原来容量的2倍
+            resize(2 * data.length);
         }
         for (int i = size - 1; i >= index; i--) {
             data[i + 1] = data[i];
@@ -158,6 +159,9 @@ public class Array<E> {
         }
         size--;
         data[size] = null; // 释放最后一个元素空间
+        if(size == data.length/2){
+            resize(data.length/2);
+        }
         return ret;
     }
 
@@ -206,5 +210,17 @@ public class Array<E> {
         }
         res.append("]");
         return res.toString();
+    }
+
+    /**
+     * 数组扩容私有方法
+     * @param newCapacity
+     */
+    private void resize(int newCapacity) {
+        E[] newData = (E[]) new Object[newCapacity];
+        for (int i = 0; i < size; i++) {
+            newData[i] = data[i];
+        }
+        data = newData;
     }
 }
