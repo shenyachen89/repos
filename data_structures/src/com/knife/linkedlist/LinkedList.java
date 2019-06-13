@@ -1,4 +1,4 @@
-package com.imooc.linkedlist;
+package com.knife.linkedlist;
 
 public class LinkedList<E> {
 

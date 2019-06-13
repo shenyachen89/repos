@@ -1,4 +1,4 @@
-package com.imooc.array;
+package com.knife.array;
 
 public class Test {
 

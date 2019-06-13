@@ -1,6 +1,6 @@
-package com.imooc.stack;
+package com.knife.stack;
 
-import com.imooc.array.Array;
+import com.knife.array.Array;
 
 public class ArrayStack<E> implements Stack<E> {
 

@@ -1,4 +1,4 @@
-package com.imooc.stack;
+package com.knife.stack;
 
 public class Solution {
     /**

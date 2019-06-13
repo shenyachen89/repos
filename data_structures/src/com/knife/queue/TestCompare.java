@@ -1,4 +1,4 @@
-package com.imooc.queue;
+package com.knife.queue;
 
 import java.util.Random;
 

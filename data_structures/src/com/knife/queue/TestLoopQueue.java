@@ -1,4 +1,4 @@
-package com.imooc.queue;
+package com.knife.queue;
 
 public class TestLoopQueue {
     public static void main(String[] args) {

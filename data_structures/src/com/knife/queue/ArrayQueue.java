@@ -1,6 +1,6 @@
-package com.imooc.queue;
+package com.knife.queue;
 
-import com.imooc.array.Array;
+import com.knife.array.Array;
 
 public class ArrayQueue<E> implements Queue<E> {
 
