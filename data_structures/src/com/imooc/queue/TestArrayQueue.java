@@ -1,6 +1,6 @@
 package com.imooc.queue;
 
-public class Test {
+public class TestArrayQueue {
 
     public static void main(String[] args) {
         ArrayQueue<Integer> queue = new ArrayQueue<>();
@@ -8,7 +8,7 @@ public class Test {
             queue.enqueue(i);
             System.out.println(queue);
 
-            if(i%3==2){
+            if (i % 3 == 2) {
                 queue.dequeue();
                 System.out.println(queue);
             }
