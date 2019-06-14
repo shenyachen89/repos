@@ -25,12 +25,12 @@ public class TestCompare {
     }
 
     /**
-     * ArrayQueue time: 0.048778655 s
-     * LoopQueue time: 0.00269311 s
+     * ArrayQueue time: 3.573378582 s
+     * LoopQueue time: 0.013769322 s
      * @param args
      */
     public static void main(String[] args) {
-        int opCount = 10000;
+        int opCount = 100000;
         ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
         double time1 = testQueue(arrayQueue, opCount);
         System.out.println("ArrayQueue time: "+time1+" s");

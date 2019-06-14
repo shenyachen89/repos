@@ -1,6 +1,6 @@
 package com.knife.stack;
 
-public class Test {
+public class TestArrayStack {
 
     public static void main(String[] args) {
         ArrayStack<Integer> stack = new ArrayStack<>();
